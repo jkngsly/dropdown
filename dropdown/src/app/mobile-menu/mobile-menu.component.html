@@ -1,0 +1,14 @@
+
+<div (clickOutside)="toggleOutside()">
+    <button (click)="toggle()">
+      <fa-icon [icon]="faBars"></fa-icon>
+    </button>
+    <nav [style.opacity]="!showMenu ? 0 : 1">
+      <ul>
+        <li><a>Home</a></li>
+        <li><a>About</a></li>
+        <li><a>Contact</a></li>
+        <li><a>FAQ</a></li>
+      </ul>
+    </nav>
+</div>
